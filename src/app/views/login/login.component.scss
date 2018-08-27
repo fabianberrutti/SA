@@ -1,0 +1,31 @@
+.page-login {
+  .title {
+    top: 0px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .wrapper-login {
+    width: 280px;
+  }
+  .btn-login {
+    top: 30px;
+    position: relative;
+    width: 100%;
+  } 
+  .error {
+    padding: 10px 0px;
+    font-size: 15px;
+    color: red;
+  }
+  .icon-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding-bottom: 50px;
+    i {
+      color: #BCBCBC;
+      font-size: 66px
+    }
+  }
+}

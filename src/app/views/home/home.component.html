@@ -1,0 +1,24 @@
+<div class="page-home">
+  <div class="container center">
+    <div class="title">Bienvenido a Sanatorio Allende </div>
+    <div class="menu-home">
+      <div class="wrapper-buttons">
+        <div class="item" *ngIf="!isLoggedIn()">
+          <a routerLink="/login" routerLinkActive="active">
+            <button class="btn">
+              <i class="material-icons">input</i> <span>ir a Login </span>
+            </button>
+          </a>
+        </div>
+         <div class="item">
+          <a routerLink="/gallery" routerLinkActive="active">
+             <button class="btn">
+               <i class="material-icons">photo_library</i> <span>ir a galería </span>
+             </button>
+          </a>
+        </div>
+      </div>
+      <div *ngIf="error" class="error"> {{error}}</div>
+    </div>
+  </div>
+</div>

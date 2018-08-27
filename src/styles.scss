@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "variables.scss";
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 60px);
+  left: 60px;
+  &.center {
+    align-items: center;
+  }
+}
+.btn {
+  border-radius: 9999px;
+  text-transform: uppercase;
+  transition: all .15s ease-in-out;
+  text-decoration: none;
+  text-align: center;
+  padding: .7rem 1.7rem;
+  border-style: solid;
+  border-width: 1px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background-color: $primary-color;
+  }
+  span {
+    padding-left: 5px;
+  }
+}
+.input-form {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #4a4a4a;
+  border-radius: 0;
+  outline: none;
+  height: 2.7rem;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0;
+  box-shadow: none;
+  box-sizing: content-box;
+  transition: all .3s;
+  margin-top: 0;
+  text-indent: 0;
+}

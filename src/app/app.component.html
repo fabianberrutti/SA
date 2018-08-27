@@ -1,0 +1,31 @@
+
+<nav class="sidebar">
+  <ul>
+    <li>
+      <a routerLink="/home" routerLinkActive="active">
+        <i class="material-icons">home</i>
+      </a>
+    </li>
+    <li *ngIf="!isLoggedIn()">
+      <a routerLink="/login" routerLinkActive="active">
+         <i class="material-icons">lock</i>
+      </a>
+    </li>
+    <li *ngIf="isLoggedIn()">
+      <a routerLink="/user" routerLinkActive="active">
+        <i class="material-icons">account_circle</i>
+      </a>
+    </li> 
+    <li *ngIf="isLoggedIn()">
+      <a routerLink="/gallery" routerLinkActive="active">
+        <i class="material-icons">photo_library</i>
+      </a>
+    </li>
+    <li *ngIf="isLoggedIn()">
+      <a (click)="logout()">
+        <i class="material-icons">exit_to_app</i>
+      </a>
+    </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>

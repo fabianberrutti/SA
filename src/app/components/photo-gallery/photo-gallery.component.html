@@ -1,0 +1,16 @@
+<div class="wrapper-gallery">
+  <i class="material-icons" (click)="onClickLeft()">
+    chevron_left
+  </i>
+
+  <div *ngFor="let photo of photos; let i = index">
+    <div (click)="onClickPhoto(photo)">
+      <img [src]="photo.thumbnailUrl">
+    </div>
+  </div>
+
+  <i class="material-icons" (click)="onClickRight()">
+    chevron_right
+  </i>
+</div>
+

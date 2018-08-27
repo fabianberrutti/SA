@@ -1,0 +1,12 @@
+<div class="page-gallery">
+  <div class="container center">
+    <div class="title">Gallería de fotos</div>
+    <photo-gallery
+      [photos]="photos"
+      (clickLeft)="onClickLeft($event)"
+      (clickRight)="onClickRight($event)"
+      (clickPhoto)="onClickPhoto($event)"
+    >
+    </photo-gallery>
+  </div>
+</div>

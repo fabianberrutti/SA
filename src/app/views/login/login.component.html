@@ -1,0 +1,23 @@
+<div class="page-login">
+  <div class="container center">
+    <div class="wrapper-login">
+      <div class="title"> Accede a tu cuenta </div> 
+      <div class="icon-account">
+        <i class="material-icons">account_circle</i>
+      </div>
+      <form #loginForm="ngForm" (ngSubmit)="loginForm.form.valid && onSubmit(loginForm)" novalidate>
+        <label for="email">Email</label>
+        <input type="text" class="input-form" name="email" #email="ngModel" required email
+          [(ngModel)]="userEmail" 
+          />
+          <!--[ngClass]="{ 'is-invalid': loginForm.submitted && email.invalid }"-->
+        <div *ngIf="loginForm.submitted && email.invalid" class="invalid-feedback">
+          <div *ngIf="email.errors.required" class="error">El email es requerido</div>
+          <div *ngIf="email.errors.email" class="error">Debe ingresar un email válido</div>
+        </div>
+         <div *ngIf="errorEmail && loginForm.submitted" class="error">{{ errorEmail }}</div>
+        <button class="btn btn-login" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</div>

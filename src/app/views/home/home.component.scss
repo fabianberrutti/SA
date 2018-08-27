@@ -1,0 +1,23 @@
+.page-home {
+  .title {
+    position: absolute;
+    top: 0px;
+    font-size: 30px;
+    padding: 35px;
+  }
+  .menu-home {
+    width: 400px;
+    a  {
+      text-decoration: none;
+    }
+  }
+  .wrapper-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  .error {
+    padding-top: 20px;
+    text-align: center;
+    color: red;
+  }
+}

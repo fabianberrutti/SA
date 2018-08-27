@@ -1,0 +1,34 @@
+@import "../variables.scss";
+
+.sidebar {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  background: $primary-color;
+  width: 60px;
+  ul {
+    list-style: none;
+    padding: 20px 0 0 0;
+    margin: 0;
+    height: 100%;
+    li {
+      display: block;
+      height: 50px;
+      width: 100%;
+      margin-bottom: 10px;
+      position: relative;
+      text-align: center;
+      i {
+        color: white;
+      }
+      a {
+        opacity: .5;
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  
+}
